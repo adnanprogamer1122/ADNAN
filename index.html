@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waypoint Travel Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-wrap">
+            <a href="#home" class="logo"><span class="mark">🗺️</span> Waypoint</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#destinations">Destinasi</a></li>
+                    <li><a href="#stats">Stats</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+            </nav>
+            <button class="primary" id="hero-cta">Mulai</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <p class="section-label">Travel Planner untuk pemula</p>
+                <h1>Rencanakan perjalanan luar negeri pertamamu dengan percaya diri.</h1>
+                <p>Waypoint membantu kamu bikin itinerary ringkas, budget-friendly, dan mudah dipakai — tanpa ribet.</p>
+                <div class="hero-form" id="hero-form">
+                    <form id="planner-form" class="form-grid">
+                        <div class="form-group">
+                            <label for="destination">📍 Mau ke mana?</label>
+                            <input type="text" id="destination" name="destination" placeholder="Contoh: Tokyo, Bali, Seoul" required>
+                        </div>
+                        <div class="form-row inline">
+                            <div class="form-group">
+                                <label for="start-date">📅 Tanggal pergi</label>
+                                <input type="date" id="start-date" name="start-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="end-date">📅 Tanggal pulang</label>
+                                <input type="date" id="end-date" name="end-date" required>
+                            </div>
+                        </div>
+                        <div class="form-row inline">
+                            <div class="form-group">
+                                <label for="budget">💰 Budget total</label>
+                                <input type="number" id="budget" name="budget" placeholder="5000000" min="0" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="travelers">👥 Jumlah orang</label>
+                                <select id="travelers" name="travelers" required>
+                                    <option value="1">1 orang</option>
+                                    <option value="2">2 orang</option>
+                                    <option value="3">3 orang</option>
+                                    <option value="4">4 orang</option>
+                                </select>
+                            </div>
+                        </div>
+                        <footer>
+                            <span class="helper">Tanpa daftar, tanpa ribet. Simpan hasilnya langsung ke browser.</span>
+                            <button type="submit" class="primary">🗺️ Buat Itinerary Sekarang</button>
+                        </footer>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="destinations">
+            <div class="container">
+                <h2 class="section-title">🌏 Destinasi Populer untuk Pemula</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <div class="badge">🇯🇵 Tokyo</div>
+                        <h3>Tokyo, Jepang</h3>
+                        <p>Rute mudah, kultur seru, dan banyak pilihan kuliner ramah pemula.</p>
+                        <button class="secondary">Explore</button>
+                    </article>
+                    <article class="card">
+                        <div class="badge">🇰🇷 Magelang</div>
+                        <h3>magelang Jawa tengah</h3>
+                        <p>Kota modern dengan transportasi mudah dan wisata budaya.</p>
+                        <button class="secondary">Explore</button>
+                    </article>
+                    <article class="card">
+                        <div class="badge">🇹🇭 Jakarta</div>
+                        <h3>Jakarta, Jawa barat</h3>
+                        <p>Destinasi hemat dengan akses dari banyak kota besar.</p>
+                        <button class="secondary">Explore</button>
+                    </article>
+                    <article class="card">
+                        <div class="badge">🇮🇩 Bali</div>
+                        <h3>Bali, Indonesia</h3>
+                        <p>Pilihan perjalanan pertama yang familiar dengan suasana santai.</p>
+                        <button class="secondary">Explore</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-sm" id="stats">
+            <div class="container">
+                <h2 class="section-title">Angka yang Bikin Yakin</h2>
+                <div class="stats-grid">
+                    <article class="stat-card">
+                        <strong>10.000+</strong>
+                        <p>Itinerary dibuat</p>
+                    </article>
+                    <article class="stat-card">
+                        <strong>4.8 ★</strong>
+                        <p>Rating rata-rata pengguna</p>
+                    </article>
+                    <article class="stat-card">
+                        <strong>50+</strong>
+                        <p>Destinasi tersedia</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="events">
+            <div class="container">
+                <h2 class="section-title">🎉 Event & Festival Menarik</h2>
+                <div class="event-grid">
+                    <article class="event-card">
+                        <h3>🌸 Sakura Festival</h3>
+                        <p>Maret - April, Jepang. Waktu terbaik untuk melihat bunga sakura dan suasana musim semi.</p>
+                        <button class="secondary">Lihat Detail</button>
+                    </article>
+                    <article class="event-card">
+                        <h3>🎆 Songkran</h3>
+                        <p>April, Bangkok. Festival air paling seru untuk petualang muda.</p>
+                        <button class="secondary">Lihat Detail</button>
+                    </article>
+                    <article class="event-card">
+                        <h3>🎭 K-Pop Festival</h3>
+                        <p>Agustus, Seoul. Konser dan rangkaian event budaya K-pop.</p>
+                        <button class="secondary">Lihat Detail</button>
+                    </article>
+                    <article class="event-card">
+                        <h3>🌺 Bali Arts Festival</h3>
+                        <p>Juni - Juli, Bali. Seni tradisional, musik, dan parade budaya.</p>
+                        <button class="secondary">Lihat Detail</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-sm" id="reviews">
+            <div class="container">
+                <h2 class="section-title">💬 Kata Mereka yang Sudah Coba</h2>
+                <div class="review-grid">
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Saya pemula banget, tapi itinerary-nya detail banget!"</p>
+                        <strong>— Dinda, 23 th</strong>
+                    </article>
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Nggak nyangka bisa bikin itinerary Tokyo dalam 1 menit!"</p>
+                        <strong>— Farhan, 26 th</strong>
+                    </article>
+                    <article class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Langsung saya simpan dan jadikan panduan perjalanan!"</p>
+                        <strong>— Tari, 29 th</strong>
+                    </article>
+                    <article class="review-card">
+                        <div class="stars">★★★★☆</div>
+                        <p>"Cocok buat yang baru mau coba keluar negeri pertama kali."</p>
+                        <strong>— Bimo, 21 th</strong>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="cta">
+            <div class="container">
+                <div class="cta-banner">
+                    <h2>🌍 Siap mulai petualangan pertamamu?</h2>
+                    <p>Buat itinerary gratis sekarang. Tanpa daftar, tanpa bayar, langsung simpan di browser.</p>
+                    <button class="primary" id="hero-cta-bottom">🗺️ Buat Itinerary Gratis →</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="#home" class="logo"><span class="mark">🗺️</span> Waypoint</a>
+                <p>Travel planner untuk pemula yang ingin explore dunia.</p>
+            </div>
+            <div>
+                <h3>Navigasi</h3>
+                <ul>
+                    <li><a href="#destinations">Destinasi</a></li>
+                    <li><a href="#events">Event</a></li>
+                    <li><a href="#reviews">Tentang</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Ikuti Kami</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="legal">
+            <p>© 2025 Waypoint. Dibuat dengan ❤️ untuk traveler Indonesia.</p>
+        </div>
+    </footer>
+
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup-card">
+            <header>
+                <h2 id="popup-title">Itinerary</h2>
+                <button class="ghost close-popup">✕</button>
+            </header>
+            <div class="itinerary-details" id="itinerary-content"></div>
+            <div class="popup-actions">
+                <button class="secondary" id="copy-text">📋 Salin Teks</button>
+                <button class="primary" id="save-trip">💾 Simpan Trip</button>
+                <button class="ghost close-popup">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-loader" id="loader-overlay">
+        <div class="loader-card">
+            <header>
+                <h2>Sedang membuat itinerary kamu...</h2>
+            </header>
+            <div class="loader-content">
+                <p>Mohon tunggu sebentar, AI sedang menyiapkan rencana perjalanan.</p>
+                <div class="progress-bar"><span id="loader-progress" style="width:25%"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
